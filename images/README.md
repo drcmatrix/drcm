@@ -2,9 +2,7 @@
 
 ## dRCM Logo
 
-<div style="text-align: center;">
-  <img src="./drcm-logo.svg" alt="dRCM Logo">
-</div>
+![dRCM Logo](./drcm-logo.svg)
 
 ### Wheel
 
@@ -22,9 +20,8 @@ dRCM Stamp Square with white backdrop is on top of the wheel, aligned by arcs' m
 
 ## dRCM Stamps
 
-<div style="display: flex; justify-content: space-evenly; margin: 20px;">
-  <img src="./drcm-stamp.svg" alt="dRCM Stamp" width="160">
-  <img src="./drcm-stamp-square.svg" alt="dRCM Stamp Square" width="100">
-</div>
+dRCM Stamp | dRCM Stamp Square
+:-:|:-:
+<img src="./drcm-stamp.svg" alt="dRCM Stamp" width="160"> | <img src="./drcm-stamp-square.svg" alt="dRCM Stamp Square" width="100">
 
 Stamps that identify dRCM in general usage. For drawing these, [Square Bold](./fonts/Square/Square-Bold.otf) font was used with slight adjustments in letters "d" and "R" to make all letters equal-sized.

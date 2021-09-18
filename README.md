@@ -1,8 +1,6 @@
 # drcm
 
-<div style="text-align: center;">
-  <img src="./images/drcm-logo.svg" alt="dRCM Logo">
-</div>
+![dRCM Logo](./images/drcm-logo.svg)
 
 dR Community Matrix (dRCM) is a space for people interested in chatting with the fellows from devrant.com as they are. It is supposed to have enhanced code of conduct and membership screening for coming members.
 
