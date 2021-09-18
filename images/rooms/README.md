@@ -2,6 +2,13 @@
 
 These are the logos for each single room. SVG files follow the same structure, and only a pinch of values is different between them.
 
+<img src="./drcm-01-general.svg" alt="General" width="48">
+<img src="./drcm-05-brainstorm.svg" alt="" width="48">
+<img src="./drcm-10-memes.svg" alt="" width="48">
+<img src="./drcm-50-test.svg" alt="" width="48">
+<img src="./drcm-98-polygon.svg" alt="" width="48">
+<img src="./drcm-99-hq.svg" alt="" width="48">
+
 ## Room logo values
 
 ### Base name
@@ -35,6 +42,6 @@ Main icon should deliver a purpose of the room. We use [Material Design Icons](h
 
 ### E2E
 
-Shield icon on the left is supposed to tell if the room has E2E encryption.
+Shield icon on the right is supposed to tell if the room has E2E encryption.
 - `#e2e-off` - no encryption,
 - `#e2e-on` - E2EE room.
