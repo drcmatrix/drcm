@@ -2,7 +2,7 @@
 
 These are the logos for each single room. SVG files follow the same structure, and only a pinch of values is different between them.
 
-<img src="./drcm-01-general.svg" alt="General" width="48"> <img src="./drcm-05-brainstorm.svg" alt="" width="48"> <img src="./drcm-10-memes.svg" alt="" width="48"> <img src="./drcm-50-test.svg" alt="" width="48"> <img src="./drcm-98-polygon.svg" alt="" width="48"> <img src="./drcm-99-hq.svg" alt="" width="48">
+<img src="./drcm-01-general.svg" alt="General" width="48"> <img src="./drcm-05-brainstorm.svg" alt="Brainstorm" width="48"> <img src="./drcm-10-memes.svg" alt="Memes" width="48"> <img src="./drcm-50-test.svg" alt="Test" width="48"> <img src="./drcm-98-polygon.svg" alt="Polygon" width="48"> <img src="./drcm-99-hq.svg" alt="HQ" width="48">
 
 ## Room logo values
 
