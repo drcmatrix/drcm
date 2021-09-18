@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      <![CDATA[
+      @font-face {
+        font-family: "Nouveau IBM";
+        src: url("../../fonts/Nouveau_IBM/otf/Nouveau_IBM.otf") format("opentype");
+      }
+      :root {
+        /* FOREGROUND */
+        color: #383952;
+      }
+      #base {
+        /* BACKGROUND */
+        fill: #ffffff;
+      }
+      #head-cap,
+      #number,
+      #icon,
+      #e2e {
+        fill: currentColor;
+      }
+      #head-stamp {
+        fill: #ffffff;
+      }
+      #icon {
+        transform: translate(68px, 115px) scale(0.46875);
+      }
+      #e2e * {
+        display: none;
+      }
+      /* E2E */
+      #e2e-on {
+        display: inline;
+      }
+      ]]>
+    </style>
+  </defs>
+  <circle id="base" cx="128" cy="128" r="123" />
+  <g id="head">
+    <path id="head-cap" d="M 128,0 A 128,128 0 0 0 10.17,78.57 128,56.549 0 0 0 128,113.097 128,56.549 0 0 0 245.99,78.423 128,128 0 0 0 128,-0.001 Z" />
+    <path id="head-stamp" d="m40.33 40.006v52h13v-6.5h-6.5v-39h6.5v-6.5h-6.5zm13 45.5h32.5v-39h-6.5v13h-26zm149.5-45.5v6.5h6.5v39h-6.5v6.5h13v-52h-6.5zm0 45.5v-39h-32.5v39h6.5v-32.5h6.5v32.5h6.5v-32.5h6.5v32.5zm-110.5-39v39h6.5v-19.5h19.5v19.5h6.5v-26h-6.5v-13zm39 0v39h32.5v-6.5h-26v-26h26v-6.5h-26zm-32.5 6.5h13v6.5h-13zm-39 13h19.5v13h-19.5z" />
+  </g>
+  <text id="number" x="10" y="157.5" font-family="'Nouveau IBM'" font-size="56px" font-weight="bold">
+    <!-- BEGIN NUMBER -->
+    01
+    <!-- END NUMBER -->
+  </text>
+  <g id="icon">
+    <!-- BEGIN ICON -->
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12,8H4A2,2 0 0,0 2,10V14A2,2 0 0,0 4,16H5V20A1,1 0 0,0 6,21H8A1,1 0 0,0 9,20V16H12L17,20V4L12,8M21.5,12C21.5,13.71 20.54,15.26 19,16V8C20.53,8.75 21.5,10.3 21.5,12Z" />
+    </svg>
+    <!-- END ICON -->
+  </g>
+  <g id="e2e">
+    <path id="e2e-off" d="m215 111-19.051 8.4609 4.5312 4.5586 14.52-6.4805 21 9.3613v14.76c0 4.86-1.3794 9.8394-3.6894 14.189l4.3789 4.3496c3.36-5.7 5.3106-12.359 5.3106-19.199v-18zm-29.16 6-3.8398 3.8106 6 6v14.189c0 16.65 11.52 32.22 27 36 5.61-1.38 10.71-4.3193 14.91-8.2793l6.7793 6.7793 3.8106-3.8398zm8.1602 15.811 31.77 31.77c-3.18 3.09-6.8695 5.3699-10.77 6.4199-11.25-3-21-16.38-21-29.34z" />
+    <path id="e2e-on" d="m215 111-27 12v18c0 16.65 11.52 32.22 27 36 15.48-3.78 27-19.35 27-36v-18zm0 6.5391 21 9.3613v14.76c0 12.96-9.75 26.34-21 29.34z" />
+  </g>
+</svg>
