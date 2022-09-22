@@ -1,0 +1,106 @@
+= dRCM: ABC
+:idseparator: -
+:toc: preamble
+
+[.lead]
+Familiarize yourself with terminology we use throughout guides about dR Community Matrix.
+
+== Glossary
+
+=== client
+
+Application capable of interacting with <<_homeserver>> and peers via Matrix protocol. Upon logging in to <<_user>>'s account, it is acknowledged as a separate "device".
+
+=== dR
+
+Short for "https://devrant.com/[devRant]". By using this acronym in various titles, we imply no affiliation to devRant, while still referring to activities with inclusion of related community.
+
+=== dRCM
+
+dR Community Matrix, a <<_space>> in Matrix <<_federation>> where all users of <<_dr>> that pass <<_verification>> are welcome to have some chat with like-minded people. Title is derivative of one "dR Community Server", Discord guild that was created back in 2020.
+
+=== event
+
+Universal <<_timeline>> entry that has certain timestamp, originating <<_user>>, some other metadata, and optional content. Easily represented as JSON string.
+
+=== federation
+
+Network of interconnected <<_homeserver,homeservers>> that keep <<_event,events>> synchronized between each other and add to <<_redundancy>>.
+
+=== history
+
+Piece of <<_timeline>> readily available to the <<_user>> since the point they were allowed from. ^<<history-visibility>>^
+
+=== homeserver
+
+Server instance that implements Matrix Specification and acts as a "home" for <<_user,users>> that sign up at and depend on to keep <<_event,events>> going. Homeserver may or may not be in <<_federation>>, which is a focal point in discoverability of its users and <<_room,rooms>> via other servers.
+
+=== member
+
+Representation of the <<_user>> in context of some <<_room>>. Member can have a display name and avatar different from originating <<_user>> to act like an alias.
+
+=== message
+
+Type of <<_event>> used for written-out communication. Its content can be erased by <<_redaction>>.
+
+=== MSC
+
+Matrix Spec Change, which can be thought of as RFC, but for Matrix Specification. Any MSC is usually referred to as a https://spec.matrix.org/proposals/[proposal] that foregoes submission process with participation of https://matrix.org/foundation/[Spec Core Team (SCT)]. Proposals are openly governed through https://github.com/matrix-org/matrix-spec-proposals[`matrix-spec-proposals`] repository.
+
+=== MXID
+
+Unique Matrix user ID, consisting of username and <<_homeserver>> host name. Few examples: `@username:homeserver.tld`, `@drcm:envs.net`. It is immutable, so usernames are to be chosen wisely upon registration.
+
+=== online status
+
+Latest known awake state of <<_user>> determined by <<_homeserver>> based on ping it received from any connected <<_client>>.
+
+=== presence
+
+Means of determining current activity of a <<_user>> from ephemeral events and states: <<_read-receipt, read receipts>>, <<_typing-notification, typing notifications>>, and <<_online-status>>.
+
+=== read receipt
+
+Marker sent by <<_client>> to indicate that yet another <<_event>> was marked as read by <<_user>>. It lets interested users better understand their involvement with a discussion, or <<_room>> in general. Client also can send private read receipts for maintaining reduced <<_presence>>. ^<<msc2285>>^
+
+=== redaction
+
+Type of <<_event>> used to briefly refer to another <<_event>> whose content is being erased and by which <<_user>>.
+
+=== redundancy
+
+A term used to describe copying the same set of data across multiple instances to mitigate any probable outage of just a few.
+
+=== room
+
+Conversation channel with separate <<_timeline>>, <<_member>> list, set of permissions, and miscellaneous <<_state>>.
+
+=== space
+
+Kind of a <<_room>> that serves as layer for aggregating and discovering other <<_room,rooms>> (including <<_space,subspaces>>). One can think of them as "guilds" in Discord, although it would be a rough comparison.
+
+=== state
+
+Data that is supposed to be promptly fetched from <<_homeserver>> without reproducing any set of <<_event,events>>. In turn, however, sending an event is required for introducing any modification.
+
+=== timeline
+
+Reproducible sequence of <<_event,events>> that comprise entire conversation in the <<_room>> along with traces of <<_state>> mutations and <<_redaction,redactions>>.
+
+=== typing notification
+
+Marker sent by <<_client>> to indicate that <<_user>> is typing out a text for <<_message>> in certain <<_room>>. It lets participating <<_user,users>> better choose the timing of their correspondence, and be aware if someone's on their way to respond.
+
+=== user
+
+Agent on behalf of which human or automated program interacts with <<_homeserver>> it was created on. Managed under account with appointed <<_mxid>>.
+
+=== verification
+
+Procedure for ensuring the adequacy of potential <<_member>>, as they own account with enough score on <<_dr>>. Score requirement comes from a place of automatized verification, but it also may be performed manually by moderators.
+
+[bibliography]
+== References
+
+- [[[history-visibility]]] "Room History Visibility". <https://github.com/matrix-org/matrix-spec/blob/main/content/client-server-api/modules/history_visibility.md>.
+- [[[msc2285]]] "Spec MSC2285: Private read receipts". <https://github.com/matrix-org/matrix-spec/pull/1216>.

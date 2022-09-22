@@ -1,0 +1,17 @@
+:sectids!:
+= Rodion P. Borisov
+
+[%autowidth]
+|===
+.2+|image:https://github.com/vintprox.png[avatar,80]|
+
+Get in touch with Rodion for more ideas dRCM.
+
+| https://matrix.to/#/@vintprox:envs.net[Matrix]
+· https://devrant.com/users/vintprox[devRant]
+· https://github.com/vintprox[GitHub]
+|===
+
+Rodion is mostly known as `vintprox`, or `Vint` for short. Proficient with studying web engineering and mentoring frontend disciplines.
+
+Being the first administrator of dR Community Matrix, as well as dR Community Server since 2020, he wants to maintain the most welcoming instant messaging place for users of devRant.

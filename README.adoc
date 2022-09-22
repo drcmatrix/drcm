@@ -1,0 +1,142 @@
+= dRCM: Frequently Asked Questions
+Rodion P. Borisov <xref:vintprox[]>
+0.3.0, 2022-09-22
+:experimental:
+:imagesdir: assets/images
+:toc: preamble
+:tip-caption: TL;DR
+
+[.lead]
+This FAQ Guide should give you insight on what defines dR Community Matrix, how to use it productively, and why.
+
+image::drcm-logo.svg[logo,256]
+
+[#basic]
+== Basic Questions
+
+[#what-is-drcm]
+=== What does dRCM stand for?
+
+*dR Community Matrix* (xref:ABC.adoc#_drcm[dRCM]) is a xref:ABC.adoc#_space[space] in decentralized Matrix network where invited users of https://devrant.com/[devRant] are welcome to have some chat with like-minded people. It was made as a response to previous attempts of tailoring similar IM networks to devRant community.
+
+[#how-to-register]
+=== Where do I sign up?
+
+It is recommended to https://matrix-help.envs.net/first-steps/[create account at Envs.net], for there are quite a few <<envs-register,reasons>> to do so, instead of having all your eggs in Matrix.org's basket.
+
+That said, you can join dRCM from any trustworthy xref:ABC.adoc#_homeserver[homeserver] with proper xref:ABC.adoc#_federation[federation]. If Envs.net is not enough, you can always find another one in the https://joinmatrix.org/servers/[List of Public Matrix Homeservers] (or connect from friend's own server).
+
+[#before-join]
+=== How to join the space?
+
+Joining dRCM requires manual xref:ABC.adoc#_verification[verification] right now. You need to contact <<vintprox>> via Matrix and mention him at https://devrant.com/[devRant], so for link to be established.
+
+Once approved, you'll receive several room invites that you can selectively accept. You should at least visit btn:[dR Community Matrix] space and btn:[#dr01 | Lobby] room.
+
+[#after-join]
+=== So we're here, now what?
+
+It is only imperative that you _introduce yourself_. There are many things to do at dRCM after:
+
+- Chat about various topics, to get a hang of communications provided, and to make friends.
+- Don't hesitate: present whatever you're working on, post us on it.
+- Attend the workshops or make your very own!
+
+[#improve]
+=== Is anything in the plans to improve dRCM?
+
+There is no comprehensive roadmap yet. Nonetheless, you can have a peek into https://github.com/drcmatrix/drcm/issues[issues], discuss them, or https://github.com/drcmatrix/drcm/issues/new/choose[report yours].
+
+We might also look into concerns posted in dRCM rooms, but converting those to proper tickets or relaying to existing ones would be a big help. That way we're guaranteed to peruse as many points of view as possible.
+
+[#advanced]
+== Advanced Questions
+
+[#why-matrix]
+=== What's all the fuss about Matrix anyway?
+
+TIP: Ecosystem.
+
+Takes on the subject may vary depending on whether you were, or still is, a user of XMPP, IRC, or similar protocols. Don't even make us start on how many platforms you probably partake in to follow the group chats: Discord, Telegram, Slack, etc. While they are all the rage, waters of Matrix are way more transparent and rewarding to explore. ^<<matrix-vs>>^
+
+Matrix really doesn't lock you in and has arguably *fail-safe* messenger experience. By "fail-safe" we mean how the ecosystem is nurtured and kept relevant, with decentralization as the first-class citizen. ^<<fediverse>>^ Matrix is meant to be a community effort, which remains pristine with standardized processes and xref:ABC.adoc#_msc[proposals] from world-wide contributors.
+
+[#why-private]
+=== Why is dRCM private?
+
+Our humble Matrix space can be joined only by invitation, and it is a deliberate constraint. Following reasons should shed some light on why this is a case:
+
+Member list secrecy::
+    If any room would happen to be public, it would basically give out xref:ABC.adoc#_mxid[MXIDs] of users that joined it, all without exposing the recipient (guest access). We want to remedy this privacy issue by only letting the recipient see others in exchange for joining the space themselves first.
++
+NOTE: In the meantime, you can track the progress of "semi-anonymous rooms" which would provide a better privacy by masking real MXID of user. ^<<spec-260>>^
+
+Owning conversations::
+    Unless it's all private, the previous xref:ABC.adoc#_timeline[timeline] would be delivered on a golden plate to newcomers. Strictly speaking, not many would love their past shared with someone who just joined, so everyone should be provided with their own chat xref:ABC.adoc#_history[history] instead.
+
+Adequacy check-up::
+    Potential xref:ABC.adoc#_member[member] can be readily and personally invited by other member to ensure that the first is a sentient devRant user that is less likely to disrupt everyone's idyll. External merits can be used to automate this xref:ABC.adoc#_verification[verification], but as of yet, they are not decided upon.
+
+Not for everyone::
+    We want some minimal privacy by default to accomodate the threat model of the average devRant user. It is easy to see "private" aspect of the space as something closed from the vast community. Nevertheless, it can be made approachable with enough activity and written guides like this. In the end of the day, it is your journey that matters.
+
+[#why-envs]
+=== Why is everything dRCM hosted on Envs.net?
+
+We needed a better alternative to putting everything on Matrix.org homeserver, using Element Matrix Services, and hosting our very own server. https://matrix-help.envs.net/[Envs.net] was deemed to be a promising solution. Following criteria took place:
+
+[horizontal]
+Free hosting::
+    No obligatory monthly bills -- less dependency on collective paying ability of dRCM members. However, it's worth mentioning that Sven (a.k.a. @~creme) has an https://liberapay.com/envs.net/[open page for receiving donations]. If you find https://envs.net/~creme/[their work] laudable, don't mind tipping some, do you.
+Reliable uptime::
+    Every new member is presented to comparably more streamlined chat experience on Envs.net than on Matrix.org. ^<<matrix-outages>>^ ^<<envs-status>>^
+Frequent server updates::
+    Server does not stagnate and follows the common Matrix spec.
+In-house Element::
+    Sign up and login via the ubiquitous route. https://element.envs.net/[No need for downloads.]
+Rules::
+    https://envs.net/chat/etiquette/[Provided guidelines] complement the spirit of dRCM.
+Privacy policy::
+    There is concise description of https://envs.net/_matrix/consent[how data is transferred].
+
+Despite being hosted on one instance, room states and events are actually shared across federated servers, from which a user of Matrix.org or other federated homeserver can benefit as well. ^<<fediverse>>^ You own your conversations despite connectivity. It doesn't have to be only Envs.net that your account resides on, to use dRCM at full might.
+
+[#envs-register]
+=== Still, do I need to sign up at Envs.net?
+
+It is much desired for us to invite more people to https://matrix-help.envs.net/first-steps/[sign up at Envs.net homeserver] for several reasons:
+
+- Higher uptime ^<<envs-status>>^
+- Dedicated xref:ABC.adoc#_mxid[Matrix ID]
+- Full xref:ABC.adoc#_presence[presence] by default (<<disable-presence, partial opt-out>> available)
+- Bringing up more awareness about decentralization and redundancy ^<<matrix-outages>>^
+
+You can just reuse your existing account on Matrix.org or other federated homeserver, if you want. Signing up at Envs.net is completely optional for regular users, and as such you can do it any time you want.
+
+[#disable-presence]
+=== How do I disable presence?
+
+On homeservers with expected lower attendance, unlike Matrix.org, xref:ABC.adoc#_online-status[online statuses] are shared between all users. Whereas if you sign in at Matrix.org homeserver, you can probably benefit from indefinitely disabled online status.
+
+xref:ABC.adoc#_read-receipt[Read receipts] and xref:ABC.adoc#_typing-notification[typing notifications] can be disabled wherever you go, by configuring your client application.
+
+[bibliography]
+== References
+
+- [[[matrix-vs]]] Austin Huang. "How does Matrix compare to other platforms?". <https://joinmatrix.org/guide/matrix-vs-al/>. Updated 2022-05-24.
+- [[[fediverse]]] Karl M. Joch. "Smart Internet users are now choosing the Fediverse and Matrix". <https://kmj.at/en/blog/2021-05-21-move-to-fediverse-matrix/>. Published 2021-05-21.
+- [[[spec-260]]] "Add Semi-Anonymous Rooms (SPEC-260)". <https://github.com/matrix-org/matrix-spec/issues/119>.
+- [[[matrix-outages]]] Alex Gleason. "Mirroring your Matrix rooms to prevent outages". <https://blog.alexgleason.me/matrix-outages/>. Published 2019-04-12.
+- [[[envs-status]]] Status of Envs.net homeserver. <https://updown.io/6wwf> <https://updown.io/ylae>.
+
+[#authors]
+== About the Authors
+:leveloffset: 2
+
+[#vintprox,reftext=@vintprox]
+====
+[discrete]
+include::authors/vintprox.adoc[]
+====
+
+:leveloffset: 0
