@@ -17,19 +17,19 @@ image::drcm-logo.svg[logo,256]
 [#what-is-drcm]
 === What does dRCM stand for?
 
-*dR Community Matrix* (xref:ABC.adoc#_drcm[dRCM]) is a xref:ABC.adoc#_space[space] in decentralized Matrix network where invited users of https://devrant.com/[devRant] are welcome to have some chat with like-minded people. It was made as a response to previous attempts of tailoring similar IM networks to devRant community.
+*dR Community Matrix* (xref:ABC.adoc#drcm[dRCM]) is a xref:ABC.adoc#space[space] in decentralized Matrix network where invited users of https://devrant.com/[devRant] are welcome to have some chat with like-minded people. It was made as a response to previous attempts of tailoring similar IM networks to devRant community.
 
 [#how-to-register]
 === Where do I sign up?
 
 It is recommended to https://matrix-help.envs.net/first-steps/[create account at Envs.net], for there are quite a few <<envs-register,reasons>> to do so, instead of having all your eggs in Matrix.org's basket.
 
-That said, you can join dRCM from any trustworthy xref:ABC.adoc#_homeserver[homeserver] with proper xref:ABC.adoc#_federation[federation]. If Envs.net is not enough, you can always find another one in the https://joinmatrix.org/servers/[List of Public Matrix Homeservers] (or connect from friend's own server).
+That said, you can join dRCM from any trustworthy xref:ABC.adoc#homeserver[homeserver] with proper xref:ABC.adoc#federation[federation]. If Envs.net is not enough, you can always find another one in the https://joinmatrix.org/servers/[List of Public Matrix Homeservers] (or connect from friend's own server).
 
 [#before-join]
 === How to join the space?
 
-Joining dRCM requires manual xref:ABC.adoc#_verification[verification] right now. You need to contact <<vintprox>> via Matrix and mention him at https://devrant.com/[devRant], so for link to be established.
+Joining dRCM requires manual xref:ABC.adoc#verification[verification] right now. You need to contact <<vintprox>> via Matrix and mention him at https://devrant.com/[devRant], so for link to be established.
 
 Once approved, you'll receive several room invites that you can selectively accept. You should at least visit btn:[dR Community Matrix] space and btn:[#dr01 | Lobby] room.
 
@@ -59,7 +59,7 @@ TIP: Ecosystem.
 
 Takes on the subject may vary depending on whether you were, or still is, a user of XMPP, IRC, or similar protocols. Don't even make us start on how many platforms you probably partake in to follow the group chats: Discord, Telegram, Slack, etc. While they are all the rage, waters of Matrix are way more transparent and rewarding to explore. ^<<matrix-vs>>^
 
-Matrix really doesn't lock you in and has arguably *fail-safe* messenger experience. By "fail-safe" we mean how the ecosystem is nurtured and kept relevant, with decentralization as the first-class citizen. ^<<fediverse>>^ Matrix is meant to be a community effort, which remains pristine with standardized processes and xref:ABC.adoc#_msc[proposals] from world-wide contributors.
+Matrix really doesn't lock you in and has arguably *fail-safe* messenger experience. By "fail-safe" we mean how the ecosystem is nurtured and kept relevant, with decentralization as the first-class citizen. ^<<fediverse>>^ Matrix is meant to be a community effort, which remains pristine with standardized processes and xref:ABC.adoc#msc[proposals] from world-wide contributors.
 
 [#why-private]
 === Why is dRCM private?
@@ -67,15 +67,15 @@ Matrix really doesn't lock you in and has arguably *fail-safe* messenger experie
 Our humble Matrix space can be joined only by invitation, and it is a deliberate constraint. Following reasons should shed some light on why this is a case:
 
 Member list secrecy::
-    If any room would happen to be public, it would basically give out xref:ABC.adoc#_mxid[MXIDs] of users that joined it, all without exposing the recipient (guest access). We want to remedy this privacy issue by only letting the recipient see others in exchange for joining the space themselves first.
+    If any room would happen to be public, it would basically give out xref:ABC.adoc#mxid[MXIDs] of users that joined it, all without exposing the recipient (guest access). We want to remedy this privacy issue by only letting the recipient see others in exchange for joining the space themselves first.
 +
 NOTE: In the meantime, you can track the progress of "semi-anonymous rooms" which would provide a better privacy by masking real MXID of user. ^<<spec-260>>^
 
 Owning conversations::
-    Unless it's all private, the previous xref:ABC.adoc#_timeline[timeline] would be delivered on a golden plate to newcomers. Strictly speaking, not many would love their past shared with someone who just joined, so everyone should be provided with their own chat xref:ABC.adoc#_history[history] instead.
+    Unless it's all private, the previous xref:ABC.adoc#timeline[timeline] would be delivered on a golden plate to newcomers. Strictly speaking, not many would love their past shared with someone who just joined, so everyone should be provided with their own chat xref:ABC.adoc#history[history] instead.
 
 Adequacy check-up::
-    Potential xref:ABC.adoc#_member[member] can be readily and personally invited by other member to ensure that the first is a sentient devRant user that is less likely to disrupt everyone's idyll. External merits can be used to automate this xref:ABC.adoc#_verification[verification], but as of yet, they are not decided upon.
+    Potential xref:ABC.adoc#member[member] can be readily and personally invited by other member to ensure that the first is a sentient devRant user that is less likely to disrupt everyone's idyll. External merits can be used to automate this xref:ABC.adoc#verification[verification], but as of yet, they are not decided upon.
 
 Not for everyone::
     We want some minimal privacy by default to accomodate the threat model of the average devRant user. It is easy to see "private" aspect of the space as something closed from the vast community. Nevertheless, it can be made approachable with enough activity and written guides like this. In the end of the day, it is your journey that matters.
@@ -107,8 +107,8 @@ Despite being hosted on one instance, room states and events are actually shared
 It is much desired for us to invite more people to https://matrix-help.envs.net/first-steps/[sign up at Envs.net homeserver] for several reasons:
 
 - Higher uptime ^<<envs-status>>^
-- Dedicated xref:ABC.adoc#_mxid[Matrix ID]
-- Full xref:ABC.adoc#_presence[presence] by default (<<disable-presence, partial opt-out>> available)
+- Dedicated xref:ABC.adoc#mxid[Matrix ID]
+- Full xref:ABC.adoc#presence[presence] by default (<<disable-presence, partial opt-out>> available)
 - Bringing up more awareness about decentralization and redundancy ^<<matrix-outages>>^
 
 You can just reuse your existing account on Matrix.org or other federated homeserver, if you want. Signing up at Envs.net is completely optional for regular users, and as such you can do it any time you want.
@@ -116,9 +116,9 @@ You can just reuse your existing account on Matrix.org or other federated homese
 [#disable-presence]
 === How do I disable presence?
 
-On homeservers with expected lower attendance, unlike Matrix.org, xref:ABC.adoc#_online-status[online statuses] are shared between all users. Whereas if you sign in at Matrix.org homeserver, you can probably benefit from indefinitely disabled online status.
+On homeservers with expected lower attendance, unlike Matrix.org, xref:ABC.adoc#online-status[online statuses] are shared between all users. Whereas if you sign in at Matrix.org homeserver, you can probably benefit from indefinitely disabled online status.
 
-xref:ABC.adoc#_read-receipt[Read receipts] and xref:ABC.adoc#_typing-notification[typing notifications] can be disabled wherever you go, by configuring your client application.
+xref:ABC.adoc#read-receipt[Read receipts] and xref:ABC.adoc#typing-notification[typing notifications] can be disabled wherever you go, by configuring your client application.
 
 [bibliography]
 == References
