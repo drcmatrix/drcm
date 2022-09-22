@@ -4,6 +4,7 @@ Rodion P. Borisov <xref:vintprox[]>
 :experimental:
 :imagesdir: assets/images
 :toc: preamble
+:toc-title!:
 :tip-caption: TL;DR
 
 [.lead]

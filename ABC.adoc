@@ -2,6 +2,7 @@
 :idprefix:
 :idseparator: -
 :toc: preamble
+:toc-title!:
 
 [.lead]
 Familiarize yourself with terminology we use throughout guides about dR Community Matrix.
