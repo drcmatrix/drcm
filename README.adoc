@@ -7,6 +7,10 @@ Rodion P. Borisov <xref:vintprox[]>
 :toc-title!:
 :tip-caption: TL;DR
 
+ifdef::env-github[]
+> Version {revnumber}, {revdate}
+endif::[]
+
 [.lead]
 This FAQ Guide should give you insight on what defines dR Community Matrix, how to use it productively, and why.
 
