@@ -1,6 +1,6 @@
 = dRCM: Frequently Asked Questions
 Rodion P. Borisov <xref:vintprox[]>
-0.3.0, 2022-09-22
+0.3.1, 2022-09-23
 :experimental:
 :imagesdir: assets/images
 :toc: preamble
@@ -34,7 +34,7 @@ That said, you can join dRCM from any trustworthy xref:ABC.adoc#homeserver[homes
 [#before-join]
 === How to join the space?
 
-Joining dRCM requires manual xref:ABC.adoc#verification[verification] right now. You need to contact <<vintprox>> via Matrix and mention him at https://devrant.com/[devRant], so for link to be established.
+Joining dRCM requires manual xref:ABC.adoc#verification[verification] right now. You need to contact <<vintprox>> via Matrix and mention him at https://devrant.com/users/vintprox[devRant], so for link to be established.
 
 Once approved, you'll receive several room invites that you can selectively accept. You should at least visit btn:[dR Community Matrix] space and btn:[#dr01 | Lobby] room.
 
@@ -136,12 +136,23 @@ xref:ABC.adoc#read-receipt[Read receipts] and xref:ABC.adoc#typing-notification[
 
 [#authors]
 == About the Authors
-:leveloffset: 2
 
 [#vintprox,reftext=@vintprox]
 ====
 [discrete]
-include::authors/vintprox.adoc[]
-====
+=== Rodion P. Borisov
 
-:leveloffset: 0
+[%autowidth]
+|===
+.2+|image:https://github.com/vintprox.png[avatar,80]|
+Get in touch with Rodion for more ideas dRCM.
+| https://matrix.to/#/@vintprox:envs.net[Matrix]
+· https://devrant.com/users/vintprox[devRant]
+· https://github.com/vintprox[GitHub]
+|===
+
+Rodion is mostly known as `vintprox`, or `Vint` for short. Proficient with studying web engineering and mentoring frontend disciplines.
+
+Being the first administrator of dR Community Matrix, as well as dR Community Server since 2020, he wants to maintain the most welcoming instant messaging place for users of devRant.
+
+====
